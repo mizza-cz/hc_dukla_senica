@@ -31,7 +31,9 @@
     align-items: center;
     position: relative;
     height: 38px;
-    width: 100%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
     input {
       width: 23.8rem;
       padding-right: 16px;

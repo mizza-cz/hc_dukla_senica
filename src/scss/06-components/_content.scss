@@ -17,6 +17,10 @@
   font-size: 54px;
   font-weight: 700;
   line-height: 59px;
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+    line-height: normal;
+  }
 }
 
 .o-content h5,
