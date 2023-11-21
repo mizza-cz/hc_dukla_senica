@@ -1,0 +1,54 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a href="/" class="footer__logo">
+        <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+        <div class="footer__logo-title">HC DUkla senica</div>
+      </a>
+      <div class="footer__form">
+        <h5 class="h5">Odebírej novinky</h5>
+        <form action="">
+          <input type="email" placeholder="@" />
+          <button>Odebírat</button>
+        </form>
+        <p>
+          Tvá e-mailová adresa je u nás v bezpečí, přečti si naše podmínky
+          zpracování osobních údajů.
+        </p>
+      </div>
+      <div class="footer__social">
+        <h5 class="h5">Spoj se s námi</h5>
+        {% include "@components/social/social.twig" %}
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <ul class="footer__links">
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Copyright</a>
+        </li>
+        <li>
+          <a href="#">Fakturační údaje</a>
+        </li>
+        <li>
+          <a href="#">Přístupnost</a>
+        </li>
+        <li>
+          <a href="#">Podmínky použití webu</a>
+        </li>
+        <li>
+          <a href="#">Obchodní podmínky</a>
+        </li>
+      </ul>
+      <div class="esports">
+        Vyrobeno v
+        <a href="https://esportsmedia.cz/" target="_blank">
+          {% include "@images/esports.svg" %}</a
+        >
+        v roce 2023
+      </div>
+    </div>
+  </div>
+</footer>

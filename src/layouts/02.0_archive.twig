@@ -1,0 +1,65 @@
+{% extends "@components/base/base.twig" %} {% set title = "02.0_archive" %} {%
+block header %}
+
+<div class="sectionHeader">
+  {% include "@components/header/header.twig" %}
+  <div class="container">
+    <div class="sectionHeader__inner">
+      <h1 class="h1">Novinky</h1>
+      <div class="sectionHeader__menu">
+        <label class="sectionHeader__label">
+          <select class="js-select">
+            <option>Měsíc</option>
+            <option>leden</option>
+            <option>únor</option>
+            <option>březen</option>
+            <option>duben</option>
+            <option>květen</option>
+            <option>červen</option>
+            <option>červenec</option>
+            <option>srpen</option>
+            <option>září</option>
+            <option>říjen</option>
+            <option>listopad</option>
+            <option>prosinec</option>
+          </select>
+        </label>
+        <label class="sectionHeader__label">
+          <select class="js-select">
+            <option>Rok</option>
+            <option value="tipsport">2020/21</option>
+            <option value="tipsport">2019/20</option>
+            <option value="tipsport">2018/19</option>
+            <option value="tipsport">2017/18</option>
+          </select>
+        </label>
+        <label class="sectionHeader__label">
+          <select class="js-select">
+            <option>Kategorie</option>
+            <option>Aktuální zprávy</option>
+            <option>Rozhovory</option>
+            <option>Reportáže</option>
+            <option>Mládež</option>
+            <option>Tiskové zprávy</option>
+            <option>Soutěže a akce pro fanoušky</option>
+            <option>Preview k zápasu</option>
+            <option>Ohlasy po utkání</option>
+            <option>Sledge – článek</option>
+            <option>Sledge – reportáž</option>
+            <option>Historie</option>
+            <option>Fan Club</option>
+          </select>
+        </label>
+        <form class="sectionHeader__form" action="">
+          <button>{% include "@images/search.svg" %}</button>
+          <input type="text" placeholder="Vyhledejte text..." />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block main %} 
+
+{% include "@components/archive-section/archive-section.twig" %}
+{% endblock %}
