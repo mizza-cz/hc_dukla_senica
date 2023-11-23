@@ -18,3 +18,9 @@
 .sectionMenu {
   background-color: var(--color-light);
 }
+.menuTab__content {
+  display: none;
+}
+.menuTab__content.tab-active {
+  display: block;
+}

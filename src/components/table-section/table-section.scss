@@ -1,0 +1,21 @@
+.table-section {
+  padding-top: 24px;
+  padding-bottom: 68px;
+  @include media-breakpoint-down(xl) {
+    padding-bottom: 40px;
+  }
+  td {
+    vertical-align: middle;
+    strong {
+      padding: 0 4px;
+      vertical-align: middle;
+      color: var(--color-dark);
+    }
+    img {
+      height: 18px;
+      object-fit: contain;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

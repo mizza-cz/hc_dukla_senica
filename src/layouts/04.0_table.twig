@@ -2,8 +2,41 @@
 block header %}
 
 <div class="sectionHeader">
-   {% include "@components/header/header.twig" %}
-
+  {% include "@components/header/header.twig" %}
+  <div class="container">
+    <div class="sectionHeader__inner">
+      <h1 class="h1">Tabulka</h1>
+      <div class="sectionHeader__menu">
+        <label class="sectionHeader__label">
+          <select class="js-select">
+            <option>Rok</option>
+            <option value="tipsport">2020/21</option>
+            <option value="tipsport">2019/20</option>
+            <option value="tipsport">2018/19</option>
+            <option value="tipsport">2017/18</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
 </div>
 
-{% endblock %} {% block main %} Hello, World! {% endblock %}
+{% endblock %} {% block main %}
+<div class="sectionMenu">
+   <div class="container">
+     <ul class="menuTabs">
+       <li>
+         <div class="menuTab active" data-id="tab1">Všetky</div>
+       </li>
+       <li>
+         <div class="menuTab" data-id="tab2">Pouze domácí</div>
+       </li>
+       <li>
+         <div class="menuTab" data-id="tab3">Pouze venkovní</div>
+       </li>
+     </ul>
+   </div>
+ </div>
+
+ {% include "@components/table-section/table-section.twig" %}
+{% endblock %}
