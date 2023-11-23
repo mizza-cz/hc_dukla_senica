@@ -1,6 +1,9 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
 block header %}
 
-<div class="sectionHeader">{% include "@components/header/header.twig" %}</div>
+<div class="sectionHeader">
+  {% include "@components/header/header.twig" %} {% include
+  "@components/topstory-section/topstory-section.twig" %}
+</div>
 
 {% endblock %} {% block main %} Hello, World! {% endblock %}

@@ -1,0 +1,20 @@
+.menuTabs {
+  display: flex;
+  align-items: center;
+}
+.menuTab {
+  padding: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  border-bottom: 1px solid transparent;
+  color: #3f3b3b;
+  cursor: pointer;
+}
+.menuTab.active {
+  border-bottom: 1px solid var(--color-red);
+  color: var(--color-red);
+}
+.sectionMenu {
+  background-color: var(--color-light);
+}
