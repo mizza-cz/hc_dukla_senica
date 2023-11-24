@@ -50,16 +50,7 @@
       border-bottom-right-radius: 64px;
     }
   }
-  tr {
-    width: 100%;
-
-    th:nth-child(2),
-    td:nth-child(2) {
-      width: 100%;
-      text-align: left;
-      white-space: nowrap;
-    }
-  }
+ 
   tbody {
     tr {
       margin-bottom: 8px;

@@ -21,7 +21,24 @@
 .text-primary {
   color: var(--color-red) !important;
 }
+.text-secondary {
+  color: var(--color-yellow) !important;
+}
 .bold {
   font-weight: 700;
+}
+.text-white {
+  color: var(--color-light) !important;
+}
+.container-small {
+  max-width: 45.2rem;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.mb-14 {
+  margin-bottom: 56px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
 }
 /*! purgecss end ignore */

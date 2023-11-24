@@ -25,6 +25,7 @@
     width: 140px;
     left: 0px;
     top: 10px;
+    z-index: 999999;
     @include media-breakpoint-down(md) {
       width: 100px;
     }

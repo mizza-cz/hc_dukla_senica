@@ -4,6 +4,16 @@
   @include media-breakpoint-down(xl) {
     padding-bottom: 40px;
   }
+  tr {
+    width: 100%;
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 100%;
+      text-align: left;
+      white-space: nowrap;
+    }
+  }
   td {
     vertical-align: middle;
     strong {

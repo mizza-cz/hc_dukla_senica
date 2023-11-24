@@ -2,8 +2,12 @@
 block header %}
 
 <div class="sectionHeader">
-   {% include "@components/header/header.twig" %}
-
+  {% include "@components/header/header.twig" %} {% include
+  "@components/article-section/article-section.twig" %}
 </div>
+{% include "@components/article-detail/article-detail.twig" %} 
 
-{% endblock %} {% block main %} Hello, World! {% endblock %}
+{% include "@components/gallery/gallery.twig" %}
+{% include
+"@components/postsSlider/postsSlider.twig" %} {% endblock %} {% block main %} {%
+endblock %}
