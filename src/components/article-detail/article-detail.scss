@@ -1,5 +1,5 @@
 .article-detail {
-  background-color: #fff;
+  background-color: #ebebeb;
   margin-top: -140px;
   padding-top: 180px;
   .table-responsive {
@@ -12,10 +12,10 @@
     width: 100%;
     aspect-ratio: 1224/674;
     border-radius: 32px;
-    margin: 80px auto;
+    margin: 60px auto 80px;
     overflow: hidden;
     @include media-breakpoint-down(lg) {
-      margin: 40px auto;
+      margin: 20px auto 40px;
     }
     img {
       width: 100%;
