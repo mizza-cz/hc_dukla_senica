@@ -1,9 +1,186 @@
-{% extends "@components/base/base.twig" %} {% set title = "12.0_photogallery" %} {%
-block header %}
+{% extends "@components/base/base.twig" %} {% set title = "12.0_photogallery" %}
+{% block header %}
 
 <div class="sectionHeader">
-   {% include "@components/header/header.twig" %}
+  {% include "@components/header/header.twig" %}
 
+  <div class="container">
+    <div class="sectionHeader__inner">
+      <h1 class="h1">Fotogaleria</h1>
+      <div class="sectionHeader__menu">
+        <label class="sectionHeader__label">
+          <select class="js-select">
+            <option>Měsíc</option>
+            <option>leden</option>
+            <option>únor</option>
+            <option>březen</option>
+            <option>duben</option>
+            <option>květen</option>
+            <option>červen</option>
+            <option>červenec</option>
+            <option>srpen</option>
+            <option>září</option>
+            <option>říjen</option>
+            <option>listopad</option>
+            <option>prosinec</option>
+          </select>
+        </label>
+        <label class="sectionHeader__label">
+          <select class="js-select">
+            <option>Rok</option>
+            <option value="tipsport">2020/21</option>
+            <option value="tipsport">2019/20</option>
+            <option value="tipsport">2018/19</option>
+            <option value="tipsport">2017/18</option>
+          </select>
+        </label>
+        <label class="sectionHeader__label">
+          <select class="js-select">
+            <option>Kategorie</option>
+            <option>Aktuální zprávy</option>
+            <option>Rozhovory</option>
+            <option>Reportáže</option>
+            <option>Mládež</option>
+            <option>Tiskové zprávy</option>
+            <option>Soutěže a akce pro fanoušky</option>
+            <option>Preview k zápasu</option>
+            <option>Ohlasy po utkání</option>
+            <option>Sledge – článek</option>
+            <option>Sledge – reportáž</option>
+            <option>Historie</option>
+            <option>Fan Club</option>
+          </select>
+        </label>
+        <form class="sectionHeader__form" action="">
+          <button>{% include "@images/search.svg" %}</button>
+          <input type="text" placeholder="Vyhledejte text..." />
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
-
+<section class="archive-section">
+  <div class="container">
+    <div class="row g-6">
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a data-gallery="2" data-gallery-id="1" href="#" class="post">
+          <img src="images/content/post.jpeg" loading="lazy" alt="post" />
+          <div class="post__title">
+            Prodej nových permanentních vstupenek na sezónu 2023/24 zahájen!
+          </div>
+          <div class="post__date">srpna 2023</div>
+        </a>
+      </div>
+    </div>
+    <nav aria-label="Další stránky">
+      <ul
+        class="pagination d-flex flex-wrap pagination-flat pagination-success"
+      >
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">
+            {% include "@images/left-p.svg" %}
+          </a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="#" data-abc="true">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-abc="true">
+            {% include "@images/right-p.svg" %}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
 {% endblock %} {% block main %} Hello, World! {% endblock %}

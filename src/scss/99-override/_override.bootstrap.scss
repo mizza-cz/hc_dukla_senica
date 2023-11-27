@@ -41,4 +41,12 @@
     margin-bottom: 40px;
   }
 }
+.g-20 {
+  --bs-gutter-x: 5rem;
+  --bs-gutter-y: 5rem;
+  @include media-breakpoint-down(xxl) {
+    --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 2.5rem;
+  }
+}
 /*! purgecss end ignore */
