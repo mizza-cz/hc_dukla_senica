@@ -1,4 +1,24 @@
 .about-section {
+  .tag {
+    color: var(--color-red);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 12px;
+    }
+  }
+  h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
+      line-height: normal;
+    }
+  }
   .container-small {
     max-width: 900px;
   }
@@ -8,17 +28,68 @@
     font-weight: 500;
     line-height: 32px;
   }
+  &__subtitle {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+  }
   &__box {
     background-color: var(--color-light);
     border-radius: 6px;
     padding: 20px 16px;
+    li {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      a {
+        text-decoration: none;
+      }
+    }
+    li + li {
+      margin-top: 8px;
+    }
   }
+  &__reklama,
+  &__leadership,
   &__information {
     margin-top: 56px;
     padding-bottom: 80px;
     @include media-breakpoint-down(lg) {
       margin-top: 40px;
       padding-bottom: 50px;
+    }
+  }
+  &__information-img {
+    width: 100%;
+    aspect-ratio: 808/595;
+    border-radius: 32px;
+    overflow: hidden;
+    margin-top: 80px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__leadership .about-section__box {
+    span {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 23px;
+      margin-bottom: 8px;
+    }
+    .p3 {
+      margin-bottom: 8px;
+    }
+  }
+  &__reklama {
+    p + p {
+      margin-top: 20px;
     }
   }
   &__information .about-section__box {
@@ -38,4 +109,53 @@
       text-decoration: none;
     }
   }
+  &__logotypes {
+    margin-top: 32px;
+    padding-bottom: 100px;
+
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 50px;
+    }
+  }
+  &__logo {
+    @include media-breakpoint-down(md) {
+      height: 100px;
+    }
+    img {
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &__logotypes-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    gap: 40px;
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+  }
+}
+
+.p3 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 }

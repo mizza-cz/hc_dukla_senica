@@ -15,6 +15,7 @@
   cursor: pointer;
   display: block;
   text-decoration: none;
+  white-space: nowrap;
 }
 .menuTab.active {
   border-bottom: 1px solid var(--color-red);
