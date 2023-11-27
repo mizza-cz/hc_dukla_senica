@@ -1,0 +1,41 @@
+.about-section {
+  .container-small {
+    max-width: 900px;
+  }
+  &__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  &__box {
+    background-color: var(--color-light);
+    border-radius: 6px;
+    padding: 20px 16px;
+  }
+  &__information {
+    margin-top: 56px;
+    padding-bottom: 80px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+      padding-bottom: 50px;
+    }
+  }
+  &__information .about-section__box {
+    word-break: break-all;
+    p {
+      margin-bottom: 20px;
+      display: block;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    span {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 23px;
+      text-decoration: none;
+    }
+  }
+}
