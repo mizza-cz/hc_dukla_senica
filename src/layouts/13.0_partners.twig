@@ -1,5 +1,39 @@
 {% extends "@components/base/base.twig" %} {% set title = "13.0_partners" %} {%
 block header %}
 
-<div class="sectionHeader">{% include "@components/header/header.twig" %}</div>
-{% endblock %} {% block main %} Hello, World! {% endblock %}
+<div class="sectionHeader">
+  {% include "@components/header/header.twig" %}
+
+  <div class="container">
+    <div class="sectionHeader__inner">
+      <h1 class="h1">Partneri klubu</h1>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block main %}
+<div class="sectionMenu sectionMenu--scroll">
+  <div class="container">
+    <ul class="menuTabs">
+      <li>
+        <a href="#vse" class="menuTab active">Všetky</a>
+      </li>
+      <li>
+        <a href="#hlavni" class="menuTab">Hlavný</a>
+      </li>
+      <li>
+        <a href="#zlaty" class="menuTab">Zlatý</a>
+      </li>
+      <li>
+        <a href="#stribr" class="menuTab">Strieborný</a>
+      </li>
+      <li>
+        <a href="#partneri" class="menuTab">Partneri</a>
+      </li>
+      <li>
+        <a href="#medialni" class="menuTab">Mediálny</a>
+      </li>
+    </ul>
+  </div>
+</div>
+{% include "@components/partners-section/partners-section.twig" %} {% endblock
+%}
