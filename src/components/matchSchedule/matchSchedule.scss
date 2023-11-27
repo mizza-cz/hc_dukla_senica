@@ -4,6 +4,25 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-40%);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      aspect-ratio: 1224/674;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/content/bg-games.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include media-breakpoint-down(lg) {
+        transform: none;
+      }
+    }
     @include media-breakpoint-down(lg) {
       align-items: center;
     }
@@ -23,8 +42,9 @@
     @include media-breakpoint-down(lg) {
       padding-right: 0;
       width: 100%;
+      margin-bottom: 60px;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(xl) {
       margin-bottom: 60px;
     }
     &-head {

@@ -143,6 +143,10 @@ h6 {
 }
 .mainHome {
   background-color: #000;
+  padding-bottom: 64px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 40px;
+  }
 }
 .p2 {
   font-size: 14px;

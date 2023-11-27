@@ -8,6 +8,7 @@
   line-height: 22px;
   border: 1px solid transparent;
   transition: all 0.3s;
+  position: relative;
   background-color: var(--color-yellow);
   &:hover {
     background: #f4e78f;

@@ -8,6 +8,19 @@ block header %}
 
 {% endblock %} {% block main %}
 <div class="mainHome">
-  {% include "@components/matchSchedule/matchSchedule.twig" %}
+  {% include "@components/matchSchedule/matchSchedule.twig" %} {% include
+  "@components/infoBoard-section/infoBoard-section.twig" %} {% include
+  "@components/hp-fanshop/hp-fanshop.twig" %}
+  <div class="pub">
+    <div class="container">
+      <a href="#" class="pub__item">
+        <img
+          src="https://via.placeholder.com/1224x400?text=banner 1224/400"
+          class="w-100"
+          alt=""
+        />
+      </a>
+    </div>
+  </div>
 </div>
-{% endblock %}
+{% include "@components/hp-partners/hp-partners.twig" %} {% endblock %}

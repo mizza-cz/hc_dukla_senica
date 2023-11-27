@@ -1,3 +1,131 @@
 .infoBoard-section {
-  
+  margin-bottom: 106px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 40px;
+  }
+  &__news-row {
+    display: block;
+
+    columns: 392px;
+    gap: 24px;
+    position: relative;
+    transition: var(--transition);
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+
+  &__post {
+    display: block;
+    color: var(--color-light);
+    border-radius: 32px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 24px;
+    height: fit-content;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+    transition: all 0.3s;
+
+    &:hover {
+      .infoBoard-section__post-info:not(.absolute) {
+        border: 1px solid red !important;
+      }
+      img {
+        transform: scale(1.1);
+      }
+      .infoBoard-section__post-title {
+        text-decoration-color: inherit;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+      z-index: 2;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      aspect-ratio: 392/280;
+      transition: all 0.3s;
+      @include media-breakpoint-down(md) {
+        aspect-ratio: 400/400;
+      }
+    }
+  }
+  &__post-info.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none !important;
+  }
+  &__post-info {
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    position: relative;
+    border-radius: 32px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 3;
+  }
+  &__post-date {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+  &__post-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    transition: all 0.3s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+}
+
+.infoBoard-section__table {
+  .team {
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+  }
+  .table-responsive tbody tr {
+    background: transparent;
+  }
+  .table-responsive .dukla td {
+    color: var(--color-dark) !important;
+    a {
+      color: var(--color-dark) !important;
+    }
+  }
+  .table-responsive tbody td {
+    color: var(--color-light);
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 23px;
+    a {
+      color: var(--color-light);
+      display: block;
+    }
+
+    img {
+      height: 18px;
+      object-fit: cover;
+      display: block;
+      width: 18px;
+      max-width: 20px;
+    }
+  }
 }
