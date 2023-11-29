@@ -250,11 +250,616 @@
 					</div>
 				</div>
 			</header>
-
+			<div class="container">
+				<div class="sectionHeader__inner">
+					<h1 class="h1">Fanshop</h1>
+				</div>
+			</div>
 		</div>
 
 		<main class="main" aria-label="Hlavní obsah">
-			Hello, World! </main>
+
+			<section class="fanshop-section">
+				<div class="container">
+					<div class="row g-6">
+						<div class="col-xl-8">
+							<div class="row g-6">
+								<div class="col-md-6">
+									<div class="product">
+										<div class="product__img" onclick="openModal()">
+											<img src="images/content/product.png" loading="lazy" alt="product" />
+										</div>
+										<div class="product__info">
+											<div class="product__title">Dres Dukla 2023/24</div>
+											<div class="product__price">2 000,00 Kč</div>
+
+											<form action="">
+												<ul class="product__color">
+													<li>
+														<input type="radio" name="color" value="red" checked />
+													</li>
+													<li>
+														<input type="radio" name="color" value="yellow" />
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div>
+									<div class="modal" id="myModal">
+										<div class="modal-content">
+											<div class="modal__header">
+												<h3 class="h1 text-primary">Vyberte</h3>
+												<span class="close" onclick="closeModal()">
+													<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.532 13.023l9.171-9.17M3.427 4.048l9.17 9.171" stroke="#fff" stroke-width=".6" stroke-linecap="square" stroke-linejoin="round" />
+													</svg> </span>
+											</div>
+											<form action="">
+												<div class="modalForm__title">Velikost</div>
+												<ul class="modal__sizes">
+													<li>
+														<label> <input type="radio" name="size" value="XS" />XS</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="S" />S</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="M" /> M</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="L" />L</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XL" />
+															XL</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XXL" />
+
+															XXL</label>
+													</li>
+												</ul>
+												<div class="modalForm__title">Počet KS</div>
+												<div class="modalForm__input">
+													<div class="counter__btn" data-direction="minus">-</div>
+													<input class="counter__value" type="text" disabled value="1" />
+													<div class="counter__btn" data-direction="plus">+</div>
+												</div>
+												<button class="btn w-100">Vybrat</button>
+											</form>
+										</div>
+									</div>
+									<script>
+										function openModal() {
+											document.getElementById("myModal").style.display = "block";
+										}
+										// Функция для закрытия модального окна
+										function closeModal() {
+											document.getElementById("myModal").style.display = "none";
+										}
+										// Закрытие модального окна при клике вне его области
+										window.onclick = function(event) {
+											var modal = document.getElementById("myModal");
+											if (event.target == modal) {
+												modal.style.display = "none";
+											}
+										};
+									</script>
+								</div>
+								<div class="col-md-6">
+									<div class="product">
+										<div class="product__img" onclick="openModal()">
+											<img src="images/content/product.png" loading="lazy" alt="product" />
+										</div>
+										<div class="product__info">
+											<div class="product__title">Dres Dukla 2023/24</div>
+											<div class="product__price">2 000,00 Kč</div>
+
+											<form action="">
+												<ul class="product__color">
+													<li>
+														<input type="radio" name="color" value="red" checked />
+													</li>
+													<li>
+														<input type="radio" name="color" value="yellow" />
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div>
+									<div class="modal" id="myModal">
+										<div class="modal-content">
+											<div class="modal__header">
+												<h3 class="h1 text-primary">Vyberte</h3>
+												<span class="close" onclick="closeModal()">
+													<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.532 13.023l9.171-9.17M3.427 4.048l9.17 9.171" stroke="#fff" stroke-width=".6" stroke-linecap="square" stroke-linejoin="round" />
+													</svg> </span>
+											</div>
+											<form action="">
+												<div class="modalForm__title">Velikost</div>
+												<ul class="modal__sizes">
+													<li>
+														<label> <input type="radio" name="size" value="XS" />XS</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="S" />S</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="M" /> M</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="L" />L</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XL" />
+															XL</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XXL" />
+
+															XXL</label>
+													</li>
+												</ul>
+												<div class="modalForm__title">Počet KS</div>
+												<div class="modalForm__input">
+													<div class="counter__btn" data-direction="minus">-</div>
+													<input class="counter__value" type="text" disabled value="1" />
+													<div class="counter__btn" data-direction="plus">+</div>
+												</div>
+												<button class="btn w-100">Vybrat</button>
+											</form>
+										</div>
+									</div>
+									<script>
+										function openModal() {
+											document.getElementById("myModal").style.display = "block";
+										}
+										// Функция для закрытия модального окна
+										function closeModal() {
+											document.getElementById("myModal").style.display = "none";
+										}
+										// Закрытие модального окна при клике вне его области
+										window.onclick = function(event) {
+											var modal = document.getElementById("myModal");
+											if (event.target == modal) {
+												modal.style.display = "none";
+											}
+										};
+									</script>
+								</div>
+								<div class="col-md-6">
+									<div class="product">
+										<div class="product__img" onclick="openModal()">
+											<img src="images/content/product.png" loading="lazy" alt="product" />
+										</div>
+										<div class="product__info">
+											<div class="product__title">Dres Dukla 2023/24</div>
+											<div class="product__price">2 000,00 Kč</div>
+
+											<form action="">
+												<ul class="product__color">
+													<li>
+														<input type="radio" name="color" value="red" checked />
+													</li>
+													<li>
+														<input type="radio" name="color" value="yellow" />
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div>
+									<div class="modal" id="myModal">
+										<div class="modal-content">
+											<div class="modal__header">
+												<h3 class="h1 text-primary">Vyberte</h3>
+												<span class="close" onclick="closeModal()">
+													<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.532 13.023l9.171-9.17M3.427 4.048l9.17 9.171" stroke="#fff" stroke-width=".6" stroke-linecap="square" stroke-linejoin="round" />
+													</svg> </span>
+											</div>
+											<form action="">
+												<div class="modalForm__title">Velikost</div>
+												<ul class="modal__sizes">
+													<li>
+														<label> <input type="radio" name="size" value="XS" />XS</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="S" />S</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="M" /> M</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="L" />L</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XL" />
+															XL</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XXL" />
+
+															XXL</label>
+													</li>
+												</ul>
+												<div class="modalForm__title">Počet KS</div>
+												<div class="modalForm__input">
+													<div class="counter__btn" data-direction="minus">-</div>
+													<input class="counter__value" type="text" disabled value="1" />
+													<div class="counter__btn" data-direction="plus">+</div>
+												</div>
+												<button class="btn w-100">Vybrat</button>
+											</form>
+										</div>
+									</div>
+									<script>
+										function openModal() {
+											document.getElementById("myModal").style.display = "block";
+										}
+										// Функция для закрытия модального окна
+										function closeModal() {
+											document.getElementById("myModal").style.display = "none";
+										}
+										// Закрытие модального окна при клике вне его области
+										window.onclick = function(event) {
+											var modal = document.getElementById("myModal");
+											if (event.target == modal) {
+												modal.style.display = "none";
+											}
+										};
+									</script>
+								</div>
+								<div class="col-md-6">
+									<div class="product">
+										<div class="product__img" onclick="openModal()">
+											<img src="images/content/product.png" loading="lazy" alt="product" />
+										</div>
+										<div class="product__info">
+											<div class="product__title">Dres Dukla 2023/24</div>
+											<div class="product__price">2 000,00 Kč</div>
+
+											<form action="">
+												<ul class="product__color">
+													<li>
+														<input type="radio" name="color" value="red" checked />
+													</li>
+													<li>
+														<input type="radio" name="color" value="yellow" />
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div>
+									<div class="modal" id="myModal">
+										<div class="modal-content">
+											<div class="modal__header">
+												<h3 class="h1 text-primary">Vyberte</h3>
+												<span class="close" onclick="closeModal()">
+													<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.532 13.023l9.171-9.17M3.427 4.048l9.17 9.171" stroke="#fff" stroke-width=".6" stroke-linecap="square" stroke-linejoin="round" />
+													</svg> </span>
+											</div>
+											<form action="">
+												<div class="modalForm__title">Velikost</div>
+												<ul class="modal__sizes">
+													<li>
+														<label> <input type="radio" name="size" value="XS" />XS</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="S" />S</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="M" /> M</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="L" />L</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XL" />
+															XL</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XXL" />
+
+															XXL</label>
+													</li>
+												</ul>
+												<div class="modalForm__title">Počet KS</div>
+												<div class="modalForm__input">
+													<div class="counter__btn" data-direction="minus">-</div>
+													<input class="counter__value" type="text" disabled value="1" />
+													<div class="counter__btn" data-direction="plus">+</div>
+												</div>
+												<button class="btn w-100">Vybrat</button>
+											</form>
+										</div>
+									</div>
+									<script>
+										function openModal() {
+											document.getElementById("myModal").style.display = "block";
+										}
+										// Функция для закрытия модального окна
+										function closeModal() {
+											document.getElementById("myModal").style.display = "none";
+										}
+										// Закрытие модального окна при клике вне его области
+										window.onclick = function(event) {
+											var modal = document.getElementById("myModal");
+											if (event.target == modal) {
+												modal.style.display = "none";
+											}
+										};
+									</script>
+								</div>
+								<div class="col-md-6">
+									<div class="product">
+										<div class="product__img" onclick="openModal()">
+											<img src="images/content/product.png" loading="lazy" alt="product" />
+										</div>
+										<div class="product__info">
+											<div class="product__title">Dres Dukla 2023/24</div>
+											<div class="product__price">2 000,00 Kč</div>
+
+											<form action="">
+												<ul class="product__color">
+													<li>
+														<input type="radio" name="color" value="red" checked />
+													</li>
+													<li>
+														<input type="radio" name="color" value="yellow" />
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div>
+									<div class="modal" id="myModal">
+										<div class="modal-content">
+											<div class="modal__header">
+												<h3 class="h1 text-primary">Vyberte</h3>
+												<span class="close" onclick="closeModal()">
+													<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.532 13.023l9.171-9.17M3.427 4.048l9.17 9.171" stroke="#fff" stroke-width=".6" stroke-linecap="square" stroke-linejoin="round" />
+													</svg> </span>
+											</div>
+											<form action="">
+												<div class="modalForm__title">Velikost</div>
+												<ul class="modal__sizes">
+													<li>
+														<label> <input type="radio" name="size" value="XS" />XS</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="S" />S</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="M" /> M</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="L" />L</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XL" />
+															XL</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XXL" />
+
+															XXL</label>
+													</li>
+												</ul>
+												<div class="modalForm__title">Počet KS</div>
+												<div class="modalForm__input">
+													<div class="counter__btn" data-direction="minus">-</div>
+													<input class="counter__value" type="text" disabled value="1" />
+													<div class="counter__btn" data-direction="plus">+</div>
+												</div>
+												<button class="btn w-100">Vybrat</button>
+											</form>
+										</div>
+									</div>
+									<script>
+										function openModal() {
+											document.getElementById("myModal").style.display = "block";
+										}
+										// Функция для закрытия модального окна
+										function closeModal() {
+											document.getElementById("myModal").style.display = "none";
+										}
+										// Закрытие модального окна при клике вне его области
+										window.onclick = function(event) {
+											var modal = document.getElementById("myModal");
+											if (event.target == modal) {
+												modal.style.display = "none";
+											}
+										};
+									</script>
+								</div>
+								<div class="col-md-6">
+									<div class="product">
+										<div class="product__img" onclick="openModal()">
+											<img src="images/content/product.png" loading="lazy" alt="product" />
+										</div>
+										<div class="product__info">
+											<div class="product__title">Dres Dukla 2023/24</div>
+											<div class="product__price">2 000,00 Kč</div>
+
+											<form action="">
+												<ul class="product__color">
+													<li>
+														<input type="radio" name="color" value="red" checked />
+													</li>
+													<li>
+														<input type="radio" name="color" value="yellow" />
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div>
+									<div class="modal" id="myModal">
+										<div class="modal-content">
+											<div class="modal__header">
+												<h3 class="h1 text-primary">Vyberte</h3>
+												<span class="close" onclick="closeModal()">
+													<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3.532 13.023l9.171-9.17M3.427 4.048l9.17 9.171" stroke="#fff" stroke-width=".6" stroke-linecap="square" stroke-linejoin="round" />
+													</svg> </span>
+											</div>
+											<form action="">
+												<div class="modalForm__title">Velikost</div>
+												<ul class="modal__sizes">
+													<li>
+														<label> <input type="radio" name="size" value="XS" />XS</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="S" />S</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="M" /> M</label>
+													</li>
+													<li>
+														<label> <input type="radio" name="size" value="L" />L</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XL" />
+															XL</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="size" value="XXL" />
+
+															XXL</label>
+													</li>
+												</ul>
+												<div class="modalForm__title">Počet KS</div>
+												<div class="modalForm__input">
+													<div class="counter__btn" data-direction="minus">-</div>
+													<input class="counter__value" type="text" disabled value="1" />
+													<div class="counter__btn" data-direction="plus">+</div>
+												</div>
+												<button class="btn w-100">Vybrat</button>
+											</form>
+										</div>
+									</div>
+									<script>
+										function openModal() {
+											document.getElementById("myModal").style.display = "block";
+										}
+										// Функция для закрытия модального окна
+										function closeModal() {
+											document.getElementById("myModal").style.display = "none";
+										}
+										// Закрытие модального окна при клике вне его области
+										window.onclick = function(event) {
+											var modal = document.getElementById("myModal");
+											if (event.target == modal) {
+												modal.style.display = "none";
+											}
+										};
+									</script>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<div class="fanshop-order">
+								<h2 class="h1 text-primary mb-6">Objednávka</h2>
+								<form id="productsForm" class="fanshop-order__form" action="
+               ">
+									<div class="fanshop-order__basket">
+										<h3 class="h5 text-white mb-2">V košíku</h3>
+										<div class="fanshop-order__basket-price">Celkem: 6 000,00 Kč</div>
+										<div class="fanshop-order__basket-box">
+											<!-- <div class="fanshop-order__basket-empty">Prázdný košík</div> -->
+											<div class="basketProduct">
+												<div class="basketProduct__info">
+													<div class="basketProduct__title">Dres Dukla 2023/24</div>
+													<div class="basketProduct__size">XL</div>
+													<div class="basketProduct__price">2 000,00 Kč</div>
+												</div>
+												<button class="btn btn-transparent">Smazat</button>
+											</div>
+											<div class="basketProduct">
+												<div class="basketProduct__info">
+													<div class="basketProduct__title">Dres Dukla 2023/24</div>
+													<div class="basketProduct__size">L</div>
+													<div class="basketProduct__price">2 000,00 Kč</div>
+												</div>
+												<button class="btn btn-transparent">Smazat</button>
+											</div>
+											<div class="basketProduct">
+												<div class="basketProduct__info">
+													<div class="basketProduct__title">Dres Dukla 2023/24</div>
+													<div class="basketProduct__size">XL</div>
+													<div class="basketProduct__price">2 000,00 Kč</div>
+												</div>
+												<button class="btn btn-transparent">Smazat</button>
+											</div>
+										</div>
+									</div>
+
+									<h3 class="h5 text-white mb-2">Vaše údaje</h3>
+
+									<label>
+										Jméno a přijímení
+										<input type="text" name="name" required />
+									</label>
+									<label>
+										E-mail
+										<input type="email" name="email" required />
+									</label>
+									<label>
+										Telefonní číslo
+										<input type="tel" name="tel" required />
+									</label>
+									<label>
+										Doručení
+										<select class="js-select" name="" id="">
+											<option value="">Osobní převzetí</option>
+											<option value="">Osobní převzetí 2</option>
+											<option value="">Osobní převzetí 3</option>
+										</select>
+									</label>
+									<label>
+										Platba
+										<select class="js-select" name="" id="">
+											<option value="">Hotově</option>
+											<option value="">Kartou</option>
+											<option value="">Převodem</option>
+										</select>
+									</label>
+									<label>
+										Poznámka/Adresa
+										<input type="text" name="adresa" required />
+									</label>
+									<label class="fanshop-order__acceptance">
+										<input required type="checkbox" name="" id="" />
+										<p>
+											Souhlasím s obchodními podmínkami a se zpracováním osobních
+											údajů
+										</p>
+									</label>
+									<label for="">
+										Opište ověřovací kód: dl7GJ
+										<input type="text" placeholder="-" name="" id="" />
+									</label>
+									<button class="btn btn-order">Objednat <span></span></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__inner">

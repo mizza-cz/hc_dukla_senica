@@ -1,0 +1,159 @@
+.fanshop-order {
+  padding: 32px;
+  background-color: var(--color-dark);
+  margin-top: -140px;
+  border-radius: 24px;
+  @include media-breakpoint-down(xl) {
+    margin-top: 20px;
+  }
+
+  &__basket {
+    color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__basket-box {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  &__basket-empty {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 16px;
+    background: var(--color-dark-gray);
+    color: var(--color-light);
+    border-radius: 8px;
+
+    text-align: center;
+  }
+  .select2-container .select2-selection--single {
+    border: 1px solid var(--color-light-gray);
+    margin-top: 8px;
+    height: 48px;
+    b {
+      top: 14px !important;
+    }
+  }
+
+  &__form {
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      color: var(--color-light);
+      margin-bottom: 16px;
+      input:not([type="checkbox"]) {
+        display: block;
+        margin-top: 8px;
+        border: 1px solid var(--color-light-gray);
+        height: 48px;
+        width: 100%;
+        border-radius: 48px;
+        transition: all 0.3s;
+        &:hover {
+          border: 1px solid rgba(247, 223, 74, 0.6);
+        }
+        &:focus,
+        &:active,
+        &:target {
+          border: 1px solid rgba(247, 223, 74, 1);
+        }
+      }
+    }
+  }
+  &__acceptance {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex !important;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0;
+    input {
+      // border: 1px solid var(--color-light-gray);
+      // border-radius: 4px;
+      // display: block;
+      // width: 20px;
+      // height: 20px;
+
+      -webkit-appearance: none;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 9px;
+      border: 1px solid var(--color-light-gray);
+      border-radius: 3px;
+      display: inline-block;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+
+      &:checked {
+        background-color: var(--color-yellow);
+        &::after {
+          position: absolute;
+          content: "";
+          width: 10px;
+          height: 10px;
+          top: 6px;
+          right: 0;
+          margin: 0 auto;
+          background-size: contain;
+          background-repeat: no-repeat;
+          left: 0;
+          background-image: url("../images/ico/check.svg");
+        }
+      }
+    }
+  }
+}
+.fanshop-section {
+  padding-top: 56px;
+  padding-bottom: 80px;
+  @include media-breakpoint-down(xl) {
+    padding-bottom: 40px;
+  }
+}
+.btn-order {
+  width: 100%;
+  margin-top: 24px;
+  background-color: rgba(116, 114, 114, 1);
+}
+.basketProduct + .basketProduct {
+  margin-top: 8px;
+}
+.basketProduct {
+  padding: 16px;
+
+  background-color: var(--color-dark-gray);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 4px;
+    color: var(--color-light);
+  }
+  &__size {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 4px;
+    color: var(--color-light);
+  }
+  &__price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--color-red);
+  }
+  &__info {
+  }
+}

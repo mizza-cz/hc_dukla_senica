@@ -35,6 +35,9 @@
     margin-bottom: 48px;
     width: 100%;
     flex-wrap: wrap;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
   }
   &__item {
     padding-right: 15%;
@@ -42,11 +45,9 @@
     @include media-breakpoint-down(lg) {
       padding-right: 0;
       width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
-    @include media-breakpoint-down(xl) {
-      margin-bottom: 60px;
-    }
+
     &-head {
       display: flex;
       gap: 16px;

@@ -1,0 +1,85 @@
+<div class="product">
+  <div class="product__img" onclick="openModal()">
+    <img src="images/content/product.png" loading="lazy" alt="product" />
+  </div>
+  <div class="product__info">
+    <div class="product__title">Dres Dukla 2023/24</div>
+    <div class="product__price">2 000,00 Kč</div>
+
+    <form action="">
+      <ul class="product__color">
+        <li>
+          <input type="radio" name="color" value="red" checked />
+        </li>
+        <li>
+          <input type="radio" name="color" value="yellow" />
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+<div class="modal" id="myModal">
+  <div class="modal-content">
+    <div class="modal__header">
+      <h3 class="h1 text-primary">Vyberte</h3>
+      <span class="close" onclick="closeModal()">
+        {% include "@images/close.svg" %}
+      </span>
+    </div>
+    <form action="">
+      <div class="modalForm__title">Velikost</div>
+      <ul class="modal__sizes">
+        <li>
+          <label> <input type="radio" name="size" value="XS" />XS</label>
+        </li>
+        <li>
+          <label> <input type="radio" name="size" value="S" />S</label>
+        </li>
+        <li>
+          <label> <input type="radio" name="size" value="M" /> M</label>
+        </li>
+        <li>
+          <label> <input type="radio" name="size" value="L" />L</label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="size" value="XL" />
+            XL</label
+          >
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="size" value="XXL" />
+
+            XXL</label
+          >
+        </li>
+      </ul>
+      <div class="modalForm__title">Počet KS</div>
+      <div class="modalForm__input">
+        <div class="counter__btn" data-direction="minus">-</div>
+        <input class="counter__value" type="text" disabled value="1" />
+        <div class="counter__btn" data-direction="plus">+</div>
+      </div>
+      <button class="btn w-100">Vybrat</button>
+    </form>
+  </div>
+</div>
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  // Функция для закрытия модального окна
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+
+  // Закрытие модального окна при клике вне его области
+  window.onclick = function (event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>

@@ -1,0 +1,118 @@
+<section class="fanshop-section">
+  <div class="container">
+    <div class="row g-6">
+      <div class="col-xl-8">
+        <div class="row g-6">
+          <div class="col-md-6">
+            {% include "@components/product/product.twig" %}
+          </div>
+          <div class="col-md-6">
+            {% include "@components/product/product.twig" %}
+          </div>
+          <div class="col-md-6">
+            {% include "@components/product/product.twig" %}
+          </div>
+          <div class="col-md-6">
+            {% include "@components/product/product.twig" %}
+          </div>
+          <div class="col-md-6">
+            {% include "@components/product/product.twig" %}
+          </div>
+          <div class="col-md-6">
+            {% include "@components/product/product.twig" %}
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="fanshop-order">
+          <h2 class="h1 text-primary mb-6">Objednávka</h2>
+          <form
+            id="productsForm"
+            class="fanshop-order__form"
+            action="
+               "
+          >
+            <div class="fanshop-order__basket">
+              <h3 class="h5 text-white mb-2">V košíku</h3>
+              <div class="fanshop-order__basket-price">Celkem: 6 000,00 Kč</div>
+              <div class="fanshop-order__basket-box">
+                <!-- <div class="fanshop-order__basket-empty">Prázdný košík</div> -->
+                <div class="basketProduct">
+                  <div class="basketProduct__info">
+                    <div class="basketProduct__title">Dres Dukla 2023/24</div>
+                    <div class="basketProduct__size">XL</div>
+                    <div class="basketProduct__price">2 000,00 Kč</div>
+                  </div>
+                  <button class="btn btn-transparent">Smazat</button>
+                </div>
+                <div class="basketProduct">
+                  <div class="basketProduct__info">
+                    <div class="basketProduct__title">Dres Dukla 2023/24</div>
+                    <div class="basketProduct__size">L</div>
+                    <div class="basketProduct__price">2 000,00 Kč</div>
+                  </div>
+                  <button class="btn btn-transparent">Smazat</button>
+                </div>
+                <div class="basketProduct">
+                  <div class="basketProduct__info">
+                    <div class="basketProduct__title">Dres Dukla 2023/24</div>
+                    <div class="basketProduct__size">XL</div>
+                    <div class="basketProduct__price">2 000,00 Kč</div>
+                  </div>
+                  <button class="btn btn-transparent">Smazat</button>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="h5 text-white mb-2">Vaše údaje</h3>
+
+            <label>
+              Jméno a přijímení
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Telefonní číslo
+              <input type="tel" name="tel" required />
+            </label>
+            <label>
+              Doručení
+              <select class="js-select" name="" id="">
+                <option value="">Osobní převzetí</option>
+                <option value="">Osobní převzetí 2</option>
+                <option value="">Osobní převzetí 3</option>
+              </select>
+            </label>
+            <label>
+              Platba
+              <select class="js-select" name="" id="">
+                <option value="">Hotově</option>
+                <option value="">Kartou</option>
+                <option value="">Převodem</option>
+              </select>
+            </label>
+            <label>
+              Poznámka/Adresa
+              <input type="text" name="adresa" required />
+            </label>
+            <label class="fanshop-order__acceptance">
+              <input required type="checkbox" name="" id="" />
+              <p>
+                Souhlasím s obchodními podmínkami a se zpracováním osobních
+                údajů
+              </p>
+            </label>
+            <label for="">
+              Opište ověřovací kód: dl7GJ
+              <input type="text" placeholder="-" name="" id="" />
+            </label>
+            <button class="btn btn-order">Objednat <span></span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

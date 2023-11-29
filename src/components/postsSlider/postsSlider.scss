@@ -1,5 +1,11 @@
 .postsSlider {
   padding-bottom: 60px;
+  .slick-slide {
+    padding: 0 12px;
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+  }
   .post {
     aspect-ratio: 600/440 !important;
   }
@@ -29,12 +35,7 @@
 .slider__btnnext {
   right: 0;
 }
-.slick-slide {
-  padding: 0 12px;
-  @include media-breakpoint-down(md) {
-    padding: 0;
-  }
-}
+
 .slick-arrow {
   background: transparent;
   border: transparent;
