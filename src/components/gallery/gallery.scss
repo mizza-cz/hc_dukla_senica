@@ -1,7 +1,9 @@
 .gallery {
-  margin: 0 auto 56px;
+  margin: 0 auto;
+  padding-bottom: 56px;
+  background-color: #ebebeb;
   @include media-breakpoint-down(lg) {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   &-grid {
     display: grid;
