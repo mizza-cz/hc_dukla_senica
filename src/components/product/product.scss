@@ -1,6 +1,10 @@
 .product {
   cursor: pointer;
   &:hover {
+    .productModal {
+      opacity: 1;
+      visibility: visible;
+    }
     .product__img {
       border: 1px solid var(--color-red);
     }
@@ -12,6 +16,8 @@
     position: relative;
   }
   &__img {
+    position: relative;
+
     width: 100%;
     aspect-ratio: 392/340;
     border-radius: 24px;
@@ -103,5 +109,28 @@
         background: var(--color-yellow);
       }
     }
+  }
+}
+.productModal {
+  transition: all 0.3s;
+  position: absolute;
+  background: rgba(218, 58, 50, 0.72);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: block;
+    z-index: 2;
   }
 }

@@ -61,10 +61,15 @@
     cursor: pointer;
     z-index: 3;
     position: relative;
+    transition: all 0.3s;
+    &:hover {
+      border: 1px solid var(--color-yellow) !important;
+      background: rgba(#f7df4a, 0.1);
+    }
   }
 }
 .modal__sizes label.checked {
-  border: 1px solid var(--color-yellow) !important;
+  border: 2px solid var(--color-yellow) !important;
   background: rgba(#f7df4a, 0.1);
 }
 
