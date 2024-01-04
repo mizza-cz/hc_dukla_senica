@@ -16,6 +16,10 @@
   display: block;
   text-decoration: none;
   white-space: nowrap;
+  transition: all 0.3s;
+  &:hover {
+    color: #8c3a36;
+  }
 }
 .menuTab.active {
   border-bottom: 1px solid var(--color-red);

@@ -773,6 +773,7 @@
 						<div class="col-xl-4">
 							<div class="fanshop-order">
 								<h2 class="h1 text-primary mb-6">Objednávka</h2>
+
 								<form id="productsForm" class="fanshop-order__form" action="
                ">
 									<div class="fanshop-order__basket">
@@ -806,7 +807,6 @@
 											</div>
 										</div>
 									</div>
-
 									<h3 class="h5 text-white mb-2">Vaše údaje</h3>
 
 									<label>
@@ -859,6 +859,46 @@
 					</div>
 				</div>
 			</section>
+
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					const deleteButtons = document.querySelectorAll(".btn-transparent");
+					deleteButtons.forEach(function(button) {
+						button.addEventListener("click", function(event) {
+							event.preventDefault();
+							// Remove the product
+							const productDiv = this.closest(".basketProduct");
+							if (productDiv) {
+								productDiv.remove();
+								updateTotalPrice();
+							}
+						});
+					});
+
+					function updateTotalPrice() {
+						let totalPrice = 0;
+						const products = document.querySelectorAll(".basketProduct");
+						products.forEach(function(product) {
+							const priceText = product.querySelector(
+								".basketProduct__price"
+							).textContent;
+							// Correctly parse the price
+							const price = parseFloat(
+								priceText.replace(/\s/g, "").replace(",", ".")
+							);
+							totalPrice += price;
+						});
+						// Correctly format the total price
+						const formattedTotal = new Intl.NumberFormat("cs-CZ", {
+							style: "currency",
+							currency: "CZK",
+						}).format(totalPrice);
+						document.querySelector(
+							".fanshop-order__basket-price"
+						).textContent = `Celkem: ${formattedTotal}`;
+					}
+				});
+			</script>
 		</main>
 		<footer class="footer">
 			<div class="container">

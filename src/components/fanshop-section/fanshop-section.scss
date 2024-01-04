@@ -79,7 +79,7 @@
       // display: block;
       // width: 20px;
       // height: 20px;
-
+      cursor: pointer;
       -webkit-appearance: none;
       background: rgba(0, 0, 0, 0.4);
       padding: 9px;
@@ -87,10 +87,12 @@
       border-radius: 3px;
       display: inline-block;
       position: relative;
-      transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-
+      // transition: all 0.3s ease-in-out;
+      // -moz-transition: all 0.3s ease-in-out;
+      // -webkit-transition: all 0.3s ease-in-out;
+      &:hover {
+        border: 1px solid rgba(247, 223, 74, 0.6);
+      }
       &:checked {
         background-color: var(--color-yellow);
         &::after {
