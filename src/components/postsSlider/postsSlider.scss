@@ -22,14 +22,15 @@
       padding-top: 32px;
     }
   }
-}
-.slick-list {
-  overflow: visible;
-  position: relative;
-  @include media-breakpoint-down(lg) {
-    overflow: hidden;
+  .slick-list {
+    overflow: visible;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      overflow: hidden;
+    }
   }
 }
+
 .slider__btnprev {
   right: 60px;
 }

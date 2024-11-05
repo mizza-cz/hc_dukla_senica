@@ -125,7 +125,7 @@
     }
     img {
       height: 48px;
-      width: 100%;
+      width: 48px;
       object-fit: contain;
     }
   }
@@ -135,6 +135,7 @@
     line-height: 60px;
     margin-left: auto;
     text-align: right;
+    min-width: 100px;
     @include media-breakpoint-down(xl) {
       text-align: center;
       margin: 0;
