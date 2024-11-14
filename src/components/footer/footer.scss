@@ -27,8 +27,8 @@
       text-align: left;
       color: var(--color-yellow);
       text-transform: uppercase;
-      text-shadow: -1px -1px 0 var(--color-red), 1px -1px 0 var(--color-red),
-        -1px 1px 0 var(--color-red), 1px 1px 0 var(--color-red);
+      // text-shadow: -1px -1px 0 var(--color-red), 1px -1px 0 var(--color-red),
+      //   -1px 1px 0 var(--color-red), 1px 1px 0 var(--color-red);
       @include media-breakpoint-down(lg) {
         text-align: center;
       }
