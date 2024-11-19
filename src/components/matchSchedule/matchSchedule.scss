@@ -83,9 +83,10 @@
     }
   }
   &__teams-logo {
-    height: 120px;
+    width: 120px;
+    height: auto;
     @include media-breakpoint-down(md) {
-      height: 80px;
+      width: 80px;
     }
     img {
       width: 100%;
