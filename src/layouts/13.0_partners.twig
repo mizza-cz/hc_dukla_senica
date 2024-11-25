@@ -10,30 +10,5 @@ block header %}
     </div>
   </div>
 </div>
-{% endblock %} {% block main %}
-<div class="sectionMenu sectionMenu--scroll">
-  <div class="container">
-    <ul class="menuTabs">
-      <li>
-        <a href="#vse" class="menuTab active">Všetky</a>
-      </li>
-      <li>
-        <a href="#hlavni" class="menuTab">Hlavný</a>
-      </li>
-      <li>
-        <a href="#zlaty" class="menuTab">Zlatý</a>
-      </li>
-      <li>
-        <a href="#stribr" class="menuTab">Strieborný</a>
-      </li>
-      <li>
-        <a href="#partneri" class="menuTab">Partneri</a>
-      </li>
-      <li>
-        <a href="#medialni" class="menuTab">Mediálny</a>
-      </li>
-    </ul>
-  </div>
-</div>
-{% include "@components/partners-section/partners-section.twig" %} {% endblock
-%}
+{% endblock %} {% block main %} {% include
+"@components/partners-section/partners-section.twig" %} {% endblock %}

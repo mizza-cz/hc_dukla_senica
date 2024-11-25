@@ -1,9 +1,7 @@
 .partners-section {
-  margin-top: 56px;
-  padding-bottom: 32px;
+  padding: 40px 0 56px;
   @include media-breakpoint-down(lg) {
-    padding-bottom: 10px;
-    margin-top: 40px;
+    padding: 24px 0 40px;
   }
   &__row {
     a {
@@ -24,12 +22,6 @@
     margin-bottom: 24px;
   }
   &__wrapper {
-    .row {
-      margin-bottom: 56px;
-      @include media-breakpoint-down(lg) {
-        margin-bottom: 40px;
-      }
-    }
     a {
       width: 100%;
       display: flex;
