@@ -9,7 +9,7 @@ block header %}
       <div class="sectionHeader__menu">
         <label class="sectionHeader__label">
           <select class="js-select">
-            <option>Měsíc</option>
+            <option>Mesiac</option>
             <option>leden</option>
             <option>únor</option>
             <option>březen</option>
@@ -24,7 +24,7 @@ block header %}
             <option>prosinec</option>
           </select>
         </label>
-        <label class="sectionHeader__label">
+        <!-- <label class="sectionHeader__label">
           <select class="js-select">
             <option>Rok</option>
             <option value="tipsport">2020/21</option>
@@ -32,10 +32,10 @@ block header %}
             <option value="tipsport">2018/19</option>
             <option value="tipsport">2017/18</option>
           </select>
-        </label>
+        </label> -->
         <label class="sectionHeader__label">
           <select class="js-select">
-            <option>Kategorie</option>
+            <option>Kategórie</option>
             <option>Aktuální zprávy</option>
             <option>Rozhovory</option>
             <option>Reportáže</option>
@@ -52,14 +52,12 @@ block header %}
         </label>
         <form class="sectionHeader__form" action="">
           <button>{% include "@images/search.svg" %}</button>
-          <input type="text" placeholder="Vyhledejte text..." />
+          <input type="text" placeholder="Hľadaný text" />
         </form>
       </div>
     </div>
   </div>
 </div>
 
-{% endblock %} {% block main %} 
-
-{% include "@components/archive-section/archive-section.twig" %}
-{% endblock %}
+{% endblock %} {% block main %} {% include
+"@components/archive-section/archive-section.twig" %} {% endblock %}

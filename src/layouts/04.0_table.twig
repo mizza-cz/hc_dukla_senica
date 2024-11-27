@@ -23,20 +23,19 @@ block header %}
 
 {% endblock %} {% block main %}
 <div class="sectionMenu">
-   <div class="container">
-     <ul class="menuTabs">
-       <li>
-         <div class="menuTab active" data-id="tab1">Všetky</div>
-       </li>
-       <li>
-         <div class="menuTab" data-id="tab2">Pouze domácí</div>
-       </li>
-       <li>
-         <div class="menuTab" data-id="tab3">Pouze venkovní</div>
-       </li>
-     </ul>
-   </div>
- </div>
+  <div class="container">
+    <ul class="menuTabs">
+      <li>
+        <div class="menuTab active" data-id="tab1">Všetky</div>
+      </li>
+      <li>
+        <div class="menuTab" data-id="tab2">Doma</div>
+      </li>
+      <li>
+        <div class="menuTab" data-id="tab3">Vonku</div>
+      </li>
+    </ul>
+  </div>
+</div>
 
- {% include "@components/table-section/table-section.twig" %}
-{% endblock %}
+{% include "@components/table-section/table-section.twig" %} {% endblock %}
