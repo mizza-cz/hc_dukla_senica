@@ -27,11 +27,9 @@
     -moz-column-break-inside: avoid;
     break-inside: avoid;
     transition: all 0.3s;
-
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
     &:hover {
-      .infoBoard-section__post-info {
-        border: 1px solid red !important;
-      }
+      border: 1px solid red !important;
 
       .infoBoard-section__post-title {
         text-decoration-color: inherit;
@@ -54,9 +52,8 @@
     top: 0;
     left: 0;
     border: none !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+
     width: 100%;
-    overflow: hidden;
     padding: 0;
     .infoBoard-section__post-date {
       padding-left: 32px;
@@ -80,7 +77,6 @@
     }
   }
   &__post-info {
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
     position: relative;
     border-radius: 32px;
     padding: 32px;
