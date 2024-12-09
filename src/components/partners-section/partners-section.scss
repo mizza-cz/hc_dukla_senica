@@ -21,6 +21,12 @@
     line-height: 32px;
     margin-bottom: 24px;
   }
+  &__title:not(:first-child) {
+    margin-top: 56px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+    }
+  }
   &__wrapper {
     a {
       width: 100%;

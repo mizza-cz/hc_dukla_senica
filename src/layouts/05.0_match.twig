@@ -2,15 +2,11 @@
 block header %}
 
 <div class="sectionHeader">
-   {% include "@components/header/header.twig" %}
-   {% include
-      "@components/article-section/article-section.twig" %}
+  {% include "@components/header/header.twig" %} {% include
+  "@components/article-section/article-section.twig" %}
 </div>
 
-{% endblock %} {% block main %} 
-
-{% include "@components/match-detail/match-detail.twig" %} 
-{% include "@components/gallery/gallery.twig" %}
-{% include
-"@components/postsSlider/postsSlider.twig" %}
-{% endblock %}
+{% endblock %} {% block main %} {% include
+"@components/match-detail/match-detail.twig" %} {% include
+"@components/gallery/gallery.twig" %} {% include
+"@components/postsSlider/postsSlider.twig" %} {% endblock %}
