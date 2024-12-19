@@ -6,12 +6,18 @@
   }
   tr {
     width: 100%;
-
+    th:first-child,
+    td:first-child {
+      width: 3.5rem;
+    }
     th:nth-child(2),
     td:nth-child(2) {
       width: 100%;
       text-align: left;
       white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
   }
   td {
